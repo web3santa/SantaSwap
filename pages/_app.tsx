@@ -16,7 +16,7 @@ import {
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
 const config = getDefaultConfig({
-  appName: 'RainbowKit App',
+  appName: 'Pancake Swap',
   projectId: 'YOUR_PROJECT_ID',
   chains: [
     mainnet,
@@ -25,6 +25,7 @@ const config = getDefaultConfig({
     arbitrum,
     base,
     zora,
+    sepolia,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   ssr: true,
@@ -36,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={client}>
-        <RainbowKitProvider>
+        <RainbowKitProvider initialChain={11155111}>
           <Component {...pageProps} />
         </RainbowKitProvider>
       </QueryClientProvider>
