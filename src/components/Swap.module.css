@@ -1,0 +1,47 @@
+.Swap {
+    width: 100%;
+}
+
+.Swap_box {
+    padding: 5rem;
+}
+
+.Swap_one {
+    border: 1rem;
+    justify-content: space-between;
+    outline: 1rem;
+    font-size: 2rem;
+}
+
+.Swap_one input {
+    height: 2rem;
+    width: 60%;
+    margin: 1rem;
+}
+
+
+.Swap_two {
+    border: 1rem;
+    justify-content: space-between;
+    outline: 1rem;
+    font-size: 2rem;
+}
+
+.Swap_two input {
+    height: 2rem;
+    width: 60%;
+    margin: 1rem;
+}
+
+.Swap_btn {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    display: flex;
+}
+
+.Swap_btn button {
+    font-size: 30px;
+    padding: 1rem;
+    color: brown;
+}
